@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css"; // Import your CSS file
+import PlayersList from "./PlayersList";
+import NaveBare from "./Components/NaveBare";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NaveBare />
+      <br />
+      <h1>Football Players</h1>
+      <PlayersList />
     </div>
   );
 }

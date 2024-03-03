@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.PlayerCard {
+  display: inline-block;
+  width: 250px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin-top: 200px;
+}
+
+.PlayerCard:hover {
+  transform: translateY(-5px);
+}
+
+.PlayerCard img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.PlayerCard .player-info {
+  padding: 15px;
+}
+
+.PlayerCard h2 {
+  margin-top: 0;
+}
+
+.PlayerCard p {
+  margin: 0;
+}
